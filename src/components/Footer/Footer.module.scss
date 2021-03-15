@@ -1,0 +1,60 @@
+@import '../../vars';
+@import '/src/mixins';
+
+.footer{
+    flex-basis: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 30px 20px 50px;
+    background-color: #ddd;
+
+    &__logo-wrapper{
+        flex-basis: 33%;
+        text-align: right;
+    }
+
+    &__logo{
+        padding-right: 60px;
+        padding-top: 10px;
+        width: 220px;
+    }
+
+    &__address-wrapper{
+        flex-basis: 33%;
+        padding-top: 20px;
+        padding-left: 80px;
+    }
+
+    &__address{
+        display: flex;
+        padding-top: 10px;
+        white-space: pre;
+        font-size: 1.5rem;
+    
+    .fas{
+        padding-right:10px;
+        line-height: 3rem;
+        color:$red;
+    }
+    }
+
+    &__span{
+        line-height: 3rem;
+        text-transform: uppercase;
+    }
+
+    &__title-wrapper{
+        flex-basis: 33%;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    &__title{
+       @include title('Masz pytania?');
+       padding-top:10px;
+    }
+
+&__contact{
+    font-size: 2rem;
+}
+}

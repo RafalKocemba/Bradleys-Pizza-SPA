@@ -1,0 +1,54 @@
+@import '/src/vars';
+@import '/src/mixins';
+
+
+.promotions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+
+
+    &__main-title{
+        @include title('Strona główna')
+    }
+
+
+    &__promotion{
+    flex-basis: 50%;
+    align-self: center;
+    padding: 40px 20px;
+    transform:translate(-20%);
+    opacity: 0;
+    transition: 2s;
+
+    &_show{
+        transform:translate(0);
+        opacity: 1;
+    }
+    }
+
+    &__img-wrapper{
+        margin:20px 0;
+        height: 100px;
+        text-align: center;
+    }
+
+    &__img{
+        height: 100%;
+    }
+
+    &__title{
+        padding: 5px 0;
+        font-size: 3rem;
+        color: $red;
+        text-align: center;
+        text-transform: uppercase;
+        
+    }
+    &__description{
+        padding: 10px 40px;
+        font-size: 2rem;
+        text-align: center;
+
+    }
+}

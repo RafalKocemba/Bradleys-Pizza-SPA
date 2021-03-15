@@ -1,0 +1,26 @@
+@import '/src/mixins';
+@import '/src/vars';
+    
+.user-courses {
+    flex-grow: 1;
+    display: flex;
+    margin-bottom: 100px;
+    flex-direction: column;
+
+    &__title{
+       @include title('Koszyk');
+       padding-bottom:30px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10vmin;
+    }
+
+    &__paypal{
+        margin: 20px auto 70px;
+        height: 50px;
+        width: 180px;
+    }
+}

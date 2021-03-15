@@ -1,0 +1,51 @@
+//Dodaj na ruch sticky menu opacity i box shadow;
+@import '/src/vars';
+
+.menu {
+    z-index:5;
+    flex-basis: 100%;
+    position: sticky;
+    top:0;
+    height: 50px;
+    background-color: #f3f4f9 ;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.6);
+    font-size: 1.8rem;
+
+    &__list{
+        display: flex;
+        max-width: 1366px;
+        margin: 0 auto;
+    }
+
+    &__element{
+        padding: 0 30px;
+        list-style-type: none; 
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+
+        
+        &_logged{
+            margin-left: auto;
+        }
+    }
+
+    &__link{
+        display: block;
+        margin: 7px 0;
+        padding: 7px 12px;
+        border: 1px solid #f3f4f9;
+        border-radius: 5%;
+        text-decoration:none;
+        color: black;
+        transition: .2s;
+        cursor:pointer;
+
+        &:hover {
+            border: 1px solid #111;
+            background-color: $red;
+            color:#fff;
+        }  
+    }
+}
+

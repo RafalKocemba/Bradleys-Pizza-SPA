@@ -1,0 +1,71 @@
+@import '/src/mixins';
+@import '/src/vars';
+
+.HowOrderPage {
+position: relative;
+min-height: 1200px;
+
+    &__title{
+    @include title('Co i jak?')
+    }
+    &__img-wrapper{
+        position:absolute;
+        top:15%;
+        left:0;
+        right:0;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    &__text-wrapper{
+        font-family: $third-font;
+        font-size: 3rem;
+        white-space: pre-wrap;
+
+}
+    &__text-wrapper *{
+        position:absolute;
+        display: block;
+        width: 250px;
+        line-height: 3rem;
+    }
+
+    &__user-text{
+        top:20%;
+        left:28%;
+        @include animation(2s,.1s);
+    }
+    &__admin-text{
+        top:20%;
+        right:20%;
+        @include animation(2s,.3s);
+    }
+    &__user2-text{
+        top:30%;
+        left:20%;
+        @include animation(1.6s,.5s);
+    }
+    &__admin2-text{
+        top:30%;
+        right:18%;
+        @include animation(1.6s,.7s);
+    }
+    &__user3-text{
+        top:60%;
+        left:37%;
+        @include animation(1.2s,.9s);
+    }
+    &__admin3-text{
+        top:62%;
+        right:18%;
+        @include animation(1.2s,1.1s);
+    }
+    &__user4-text{
+        top:80%;
+        left:37%;
+        @include animation(0.8s,1.3s);
+    }
+
+   
+
+}
